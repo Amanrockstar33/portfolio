@@ -1,0 +1,347 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+     
+     
+} 
+html,body{
+    scroll-behavior:smooth;
+    position:absolute;
+    width:100vw;
+    font-family:cursive;
+    
+}
+ 
+main{
+    background-color: #0089b7;
+    /* width:1300px; */
+    display:grid;
+    margin:0 auto;
+      
+}
+ .logo h3{
+    margin-left:50px;
+    color:white;
+    font-size:40px;
+ }
+ .side_nav ul li{
+    margin-right:50px;
+    color:white;
+    font-size:25px;
+    justify-content:center;
+    text-align:center;
+     margin-top:10px;
+     
+ }
+ .side_nav ul li:hover{
+    border-bottom:2px solid white;
+ }
+
+.nav{
+    display:flex;
+    justify-content:space-between;
+   animation:change 10s linear infinite;
+}
+
+@keyframes change{
+ 
+    0%{
+        background-color:darkred;
+    }
+    
+     
+    50%{
+        background-color:darkcyan;
+    }
+    100%{
+        background-color:darkslateblue;
+    }
+     
+
+   
+
+}
+.side_nav ul{
+    display:flex;
+    gap:30px;
+}
+li{
+    list-style:none;
+}
+a{
+    text-decoration:none;
+}
+.about{
+    background-color:#003d62;
+    height:80vh;
+}
+.about img{
+    border-radius:40%;
+     height:500px;
+     width:350px;
+     background-position: center;
+     background-size:cover;
+     margin-left:200px;
+     margin-top:100px;
+     justify-content:center;
+}
+.image_section{
+    display:flex;
+    gap:300px;
+     justify-content:center;
+     text-align:center;
+      
+}
+
+.image_content{
+    margin-top:250px;
+    margin-right:150px;
+    justify-content:center;
+    color:white;
+    word-spacing:3px;
+     
+     
+}
+ 
+.hi{
+    font-size:70px;
+    color:yellow;
+
+}
+.aman{
+    font-size:50px;
+}
+.front{
+    font-size:70px;
+    margin-top:20px;
+      overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */ /* Adjust as needed */
+  animation: typing 5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+
+
+
+.hr{
+    border:2px solid #0089b7;
+     
+
+}
+
+.about_project{
+    background-color: #003251;
+    height: 185vh;
+     
+}
+.about_project h1{
+    text-align:center;
+    font-size:50px;
+    color:white;
+    padding-top:30px;
+    
+}
+.project_content{
+    display:grid;
+    grid-gap:70px;
+   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+   margin:auto auto;
+   margin-left:80px;
+   margin-top:50px;
+}
+.project_images{
+    transition: 1s ease-out;
+
+}
+.project_images:hover{
+    transform:scale(1.05);
+    transition:1s ease-in-out;
+      opacity: 0.8;
+
+}
+.card_content h3{
+    text-align:center;
+     color:#003251;;
+     justify-content:center;
+     
+      
+
+}
+.project_images:hover .card_content {
+  background: white;
+   
+  width:320px;
+  transform: translateY(0px);
+  transition:1s ease-in-out;
+  padding:10px 2px;
+  border-radius:30%;
+  margin-top:5px;
+  position: fixed;
+  
+}
+
+
+
+.contact_section{
+    background-color: #003d62;
+    height:80vh;
+}
+
+.contact_content h1{
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    font-size:80px;
+    color:white;
+   
+    padding-top:100px;
+    justify-content:center;
+    
+}
+.contact_content h1:hover{
+animation:changecolor 4s linear infinite; 
+}
+
+@keyframes changecolor{
+    0%{
+        color:orange;
+    }
+    50%{
+        color:red;
+
+    }
+    100%{
+        color:green;
+    }
+
+}
+
+.social_icon{
+    max-width:800px;
+    color:white;
+}
+
+.social_icon:hover{
+    color:yellow;
+}
+.social_icon i{
+    font-size:50px;
+     margin-top:20px;
+}
+.social_icon h3{
+    font-size:50px;
+     
+}
+.social_content{
+    margin-top:100px;
+    display:flex;
+    place-items: center;
+    justify-content: space-evenly;
+    /* gap:100px; */
+}
+.social_icon{
+    display:flex;
+    gap:10px;
+}
+
+.last_section{
+    display:flex;
+    justify-content:space-evenly;
+    font-size:50px;
+    color:white;
+    place-items:center;
+    justify-content:center;
+    gap:100px;
+}
+.last_social:hover{
+    color:red;
+}
+.last_social{
+    display:flex;
+    margin-top:30px;
+    gap:10px;
+}
+.last_social i{
+    margin-top:25px;
+}
+
+.last_content h3:hover{
+    color:green;
+}
+
+.last_content h3{
+     background-color: #003251;
+     height:80px;
+      padding-top:20px;
+     justify-content:center;
+    text-align:center;
+    font-size:30px;
+    color:white;
+}
+
+
+ @media (max-width: 786px) {
+  html {
+    font-size: 40%;
+  }
+  #home .image_section {
+    flex-direction: column;
+  }
+  .hero_image {
+    display: grid;
+    place-items: center;
+  }
+  #contact .contact_content{
+    height: 70vh;
+  }
+
+  .hi{
+    font-size:30px;
+  }
+  .aman{
+    font-size:30px;
+  }
+  .image_section{
+    flex-direction:column;
+    width:100vw;
+  }
+
+
+
+
+}
+@media (max-width: 500px) {
+  html {
+    font-size: 32%;
+  }
+  #home .image_section {
+    flex-direction: column;
+  }
+  .hero_image {
+    display: grid;
+    place-items: center;
+  }
+  #contact .container {
+    height: 50vh;
+  }
+}
+ 
